@@ -1,0 +1,122 @@
+* {
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Montserrat', sans-serif;
+}
+
+h1{
+    text-align: center;
+    padding-top: 20px;
+    color: rgb(155, 50, 168);
+  }
+
+//Variables
+$brand-color : #22908E;
+$text-color: #707070;
+
+.card {
+    margin: 50px auto;
+    height: 500px;
+    width: 356px;
+    background-color: white;
+    text-align: center;
+    border-radius: 10px;
+    box-shadow: 0px 3px 6px rgba(black, 0.16);
+    transition: transform ease 0.5s;
+
+    &:hover{
+        transform: scale(1.03);
+        .card-info {
+            .card-btn{
+                background-color: orange;
+            }
+        }
+    }
+}
+
+a {
+    text-decoration: none;
+}
+
+    .card-img {
+        position: relative;
+        img {
+            max-width:100%;
+            max-height: 50%;
+            border-top-left-radius: 10px;
+            border-top-right-radius: 10px;
+            // border-bottom: black solid 1px;
+        }
+
+        .card-tags {
+            list-style: none;
+            margin:0;
+            padding:0;
+            display: flex;
+            position: absolute;
+            bottom: 30px;
+            left: 40px;
+            li {
+                font-size:14px;
+                font-weight: 400;
+                line-height: 18px;
+                color: $text-color;
+                background-color: white;
+                padding:5px 15px;
+                border-radius: 30px;
+                margin-right: 12px;
+            }
+        }
+    }
+
+    .card-info {
+        padding: 33px 30px 30px 30px;
+        .card-title{
+            color: $brand-color;
+            font-size: 24px;
+            line-height: 34px;
+            font-weight: bold;
+        }
+
+        p {
+            color: $text-color;
+            font-size: 16px;
+            line-height: 28px;
+            font-weight: 400;
+            margin: 18px 0 24px;
+        }
+
+        .card-btn {
+            color: white;
+            font-size:16px;
+            line-height: 22px;
+            font-weight: bold;
+            background-color: $brand-color;
+            padding: 14px 42px;
+            border-radius: 60px;
+            display: inline-block;
+            transition: background-color ease 0.3s;
+        }
+    }
+
+//Slider
+
+.swiper-container {
+    width: 1144px;
+
+    .swiper-btn {
+        height:40px;
+        width:40px;
+        background-color: black;
+        border-radius: 50%;
+
+        &:after {
+            font-size: 20px;
+            color:white;
+        }
+    }
+}
