@@ -1,3 +1,3 @@
 # cardSwiper
 
-Card Slider using HTMl, CSS and JavaScript using Swiper JS
+Card Slider using HTMl, SCSS and JavaScript using Swiper JS
